@@ -5,16 +5,32 @@
   background-color: white;
   position: relative;
 
+  @media (min-width: 1140px) {
+    position: revert;
+    display: flex;
+  }
+
   &__img {
     background-image: url("/images/drawers.jpg");
     background-repeat: no-repeat;
     background-position: top;
     padding: 10rem;
     background-size: cover;
+
+    @media (min-width: 1140px) {
+      padding: 14rem;
+      background-position: left;
+    }
   }
 
   &__box {
     padding: 3rem;
+    padding-bottom: 2rem;
+    @media (min-width: 1140px) {
+      padding: 3.5rem;
+      padding-left: 4.5rem;
+      padding-bottom: 3rem;
+    }
   }
 
   &__heading {
@@ -22,13 +38,21 @@
     margin-bottom: 2rem;
     font-weight: 700;
     color: $color-primary-dark;
+    @media (min-width: 1140px) {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__description {
     color: $color-primary;
     font-size: 1.4rem;
     line-height: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    @media (min-width: 1140px) {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__human {
@@ -41,6 +65,9 @@
     width: 4rem;
     border-radius: 50%;
     margin-right: 2rem;
+    @media (min-width: 1140px) {
+      margin-right: 1.5rem;
+    }
   }
 
   &__info {
@@ -51,6 +78,9 @@
     color: $color-primary-dark;
     font-size: 1.4rem;
     font-weight: 700;
+    @media (min-width: 1140px) {
+      font-size: 1.3rem;
+    }
   }
 
   &__date {
@@ -69,13 +99,38 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    display: none;
+    // display: none;
+    @media (min-width: 1140px) {
+      width: 34%;
+      left: 55rem;
+      border-radius: 1rem;
+      bottom: 19rem;
+      z-index: 1;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 4.5rem;
+        left: 11.4rem;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid $color-primary-dark;
+        border-right: 10px solid $color-primary-dark;
+        transform: rotate(45deg);
+      }
+    }
+    &--active {
+      display: none;
+    }
   }
 
   &__share {
     color: $color-primary-light;
     letter-spacing: 0.7rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    @media (min-width: 1140px) {
+      //   padding-right: 1.8rem;
+    }
   }
 
   &__icons {
@@ -83,15 +138,9 @@
     justify-content: space-evenly;
     align-items: center;
     width: 40%;
-  }
-
-  &__facebook {
-  }
-
-  &__twitter {
-  }
-
-  &__pinterest {
+    @media (min-width: 1140px) {
+      width: 60%;
+    }
   }
 
   &__button {
@@ -101,9 +150,34 @@
     outline: none;
     border: 0;
     margin-left: auto;
+    margin-bottom: 0.9rem;
+
+    @media (min-width: 1140px) {
+      margin-left: 10.5rem;
+      margin-bottom: 0;
+      cursor: pointer;
+    }
+
     &--open {
-      //   height: 2rem;
-      //   width: 2rem;
+      background-color: $color-secondary;
+      fill: $color-primary;
+    }
+
+    &--color {
+      @media (min-width: 1140px) {
+        background-color: $color-primary;
+        fill: $color-secondary;
+      }
+    }
+
+    &--close {
+      background-color: $color-primary;
+      fill: $color-secondary;
+      @media (min-width: 1140px) {
+        display: none;
+        background-color: $color-secondary;
+        fill: $color-primary;
+      }
     }
   }
 }

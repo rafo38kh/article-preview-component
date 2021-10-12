@@ -1,4 +1,10 @@
 .container {
   width: 90%;
   max-width: 400px;
+
+  @media (min-width: 1140px) {
+    max-width: 730px;
+    margin-top: 16rem;
+    position: relative;
+  }
 }
