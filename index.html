@@ -21,8 +21,8 @@
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    <div class="container">
-      <main class="content">
+    <main class="container">
+      <figure class="content">
         <div class="content__img"></div>
         <div class="content__box">
           <h1 class="content__heading">
@@ -44,10 +44,7 @@
               <p class="content__name">Michelle Appleton</p>
               <p class="content__date">28 Jun 2020</p>
             </div>
-            <div
-              class="content__social-box content__social-box--active"
-              aria-expanded="false"
-            >
+            <div class="content__social-box content__social-box--active">
               <p class="content__share">SHARE</p>
               <div class="content__icons">
                 <img src="images/icon-facebook.svg" alt="facebook" />
@@ -67,7 +64,10 @@
                 </svg>
               </button>
             </div>
-            <button class="content__button content__button--open">
+            <button
+              class="content__button content__button--open"
+              aria-expanded="false"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
@@ -81,7 +81,22 @@
             </button>
           </div>
         </div>
-      </main>
-    </div>
+      </figure>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a
+        class="attribution__link"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        class="attribution__link"
+        href="https://github.com/rafo38kh"
+        target="_blank"
+        >rafo38kh</a
+      >.
+    </footer>
   </body>
 </html>

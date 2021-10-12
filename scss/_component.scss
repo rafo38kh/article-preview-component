@@ -181,3 +181,22 @@
     }
   }
 }
+
+.attribution {
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+
+  &__link:link,
+  &__link:visited {
+    color: $color-footer;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-footer-hover;
+  }
+}

@@ -166,3 +166,15 @@ body {
           display: none;
           background-color: #ecf2f8;
           fill: #6d7f97; } }
+
+.attribution {
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0; }
+  .attribution__link:link, .attribution__link:visited {
+    color: #397f74;
+    text-transform: uppercase;
+    transition: all 0.2s; }
+  .attribution__link:hover, .attribution__link:active {
+    color: #18352f; }
