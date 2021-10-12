@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-component-with-scss-bem-and-vanilla-js-bjrbFYwjp](https://www.frontendmentor.io/solutions/article-preview-component-with-scss-bem-and-vanilla-js-bjrbFYwjp)
 - Live Site URL: [https://rafo38kh.github.io/article-preview-component/](https://rafo38kh.github.io/article-preview-component/)
 
 ## My process
