@@ -1,6 +1,6 @@
 # Frontend Mentor - Article-Preview-Component Solution
 
-This is a solution to the [Article-Preview-Component Challenge on Frontend Mentor]({LINK})
+This is a solution to the [Article-Preview-Component Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
 
 ## Table of contents
 
@@ -16,7 +16,10 @@ This is a solution to the [Article-Preview-Component Challenge on Frontend Mento
 
 ### The challenge
 
-- {CHALLANGE}
+Users should be able to:
+
+- View the optimal layout for the component depending on their device's screen size
+- See the social media share links when they click the share icon
 
 ### Screenshot
 
@@ -25,7 +28,7 @@ This is a solution to the [Article-Preview-Component Challenge on Frontend Mento
 ### Links
 
 - Solution URL: []()
-- Live Site URL: []()
+- Live Site URL: [https://rafo38kh.github.io/article-preview-component/](https://rafo38kh.github.io/article-preview-component/)
 
 ## My process
 
@@ -34,6 +37,7 @@ This is a solution to the [Article-Preview-Component Challenge on Frontend Mento
 - Semantic HTML5 markup
 - SCSS custom properties
 - CSS Flexbox
+- Vanilla JS
 - Mobile-first workflow
 
 ## Author
